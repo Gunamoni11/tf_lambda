@@ -21,7 +21,7 @@ resource "aws_iam_role" "test_lambda1" {
 EOF
 }
 
-resource "aws_lambda_function" "test_lambda" {
+resource "aws_lambda_function" "test_lambda1" {
   filename      = "lambda_function_payload.zip"
   function_name = "lambda_function_name"
   role          = aws_iam_role.test_lambda1.arn
